@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CircleAnimation from './CircleAnimation';
 
-const AchievementsSection = styled.section`
+const EducationSection = styled.section`
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
@@ -43,18 +43,17 @@ const AchievementsSection = styled.section`
   }
 `;
 
-const Achievements = () => {
+const Education = () => {
   return (
-    <AchievementsSection id="achievements">
+    <EducationSection id="education">
       <CircleAnimation />
-      <h2>Achievements</h2>
+      <h2>Education</h2>
       <ul>
-        <li>SIH23 Runner-up</li>
-        <li>AI and IoT Specialist</li>
-        <li>Multiple Award-Winning Projects</li>
+        <li>Bachelor of Technology in Computer Science</li>
+        <li>Master of Science in Artificial Intelligence</li>
       </ul>
-    </AchievementsSection>
+    </EducationSection>
   );
 };
 
-export default Achievements;
+export default Education;

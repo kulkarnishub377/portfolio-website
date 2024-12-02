@@ -7,6 +7,10 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Sidebar from './components/Sidebar';
+import Achievements from './components/Achievements';
+import Education from './components/Education';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -19,8 +23,11 @@ function App() {
       <Certifications />
       <Experience />
       <Skills />
+      <Achievements />
+      <Education />
       <Contact />
-      {/* Other sections will go here */}
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

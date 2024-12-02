@@ -1,5 +1,28 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #ECF0F1; /* Softer tone for background */
+}
+
 .App {
   text-align: center;
+}
+
+/* Prevent overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .App-logo {
@@ -14,18 +37,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2C3E50; /* Dominant color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ECF0F1; /* Softer tone for text */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #BDC3C7; /* Softer tone for links */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +58,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Section styles */
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #34495E; /* Dominant color */
+  color: #ECF0F1; /* Softer tone for text */
+  position: relative;
+  perspective: 1000px;
+  padding: 60px 20px; /* Add padding to create space between sections */
+  box-sizing: border-box;
+}
+
+/* Container for responsiveness */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }

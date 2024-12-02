@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import CircleAnimation from './CircleAnimation';
 
 const skills = [
   {
@@ -40,7 +41,8 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="py-20 bg-white">
+    <section id="skills" className="py-20">
+      <CircleAnimation />
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Top Skills</h2>
         <div className="flex overflow-x-scroll space-x-8">
