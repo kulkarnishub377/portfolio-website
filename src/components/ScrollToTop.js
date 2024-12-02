@@ -14,9 +14,9 @@ const fadeIn = keyframes`
 const ScrollButton = styled.button`
     position: fixed;
     bottom: 2rem;
-    left: 2rem;
-    background-color: #3182ce;
-    color: white;
+    right: 2rem;
+    background-color: #2C3E50;
+    color: #ECF0F1;
     border: none;
     border-radius: 50%;
     padding: 0.75rem 1.25rem;
@@ -25,12 +25,9 @@ const ScrollButton = styled.button`
     transition: background-color 0.3s, transform 0.3s;
     z-index: 1000;
     animation: ${fadeIn} 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &:hover {
-        background-color: #2b6cb0;
+        background-color: #34495E;
         transform: scale(1.1);
     }
 
@@ -65,7 +62,7 @@ const ScrollToTop = () => {
     }, []);
 
     return (
-        <ScrollButton onClick={scrollToTop} style={{ display: isVisible ? 'flex' : 'none' }}>
+        <ScrollButton onClick={scrollToTop} style={{ display: isVisible ? 'inline' : 'none' }}>
             <FaArrowUp />
         </ScrollButton>
     );
